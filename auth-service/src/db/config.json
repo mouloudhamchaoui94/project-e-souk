@@ -1,0 +1,8 @@
+{
+  "connectionLimit": 10, 
+  "password": "mouloud",
+  "user": "root",
+  "database": "auth_database",
+  "host": "localhost",
+  "port": "3306"
+}

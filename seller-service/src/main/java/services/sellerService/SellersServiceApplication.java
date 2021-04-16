@@ -1,0 +1,13 @@
+package services.sellerService;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SellersServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SellersServiceApplication.class, args);
+	}
+
+}

@@ -1,0 +1,37 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "A JavaScript project",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev:watch": "node ./node_modules/parcel-bundler/bin/cli watch ./src/index.js --target node",
+    "dev:hot-reload": "node ./node_modules/nodemon/bin/nodemon --watch ./dist/ ./dist/index.js",
+    "start": "node ./node_modules/npm-run-all/bin/npm-run-all -p -r dev:watch dev:hot-reload",
+    "build": "node ./node_modules/parcel-bundler/bin/cli build ./src/index.js --target node --out-dir ./dist/",
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.5"
+  }
+}
